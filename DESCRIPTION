@@ -1,0 +1,26 @@
+Package: corrlY
+Type: Package
+Title: All Types of Correlation Charts using Plotly
+Version: 1.2.0
+Author: Mahesh Kulkarni
+Maintainer: Mahesh Kulkarni <kulkarni.mahesh320@gmail.com>
+Description: This is a Data Visualization Package For Correlation Using Plotly library. 
+License: GPL-3
+URL: https://maheshkulkarnix.github.io/corrlY
+BugReports: https://github.com/maheshKulkarniX/corrlY/issues
+Imports: 
+    plotly
+Encoding: UTF-8
+LazyData: true
+Collate:
+    'Autocorrelation.R'
+    'corr_coef_kendall.R'
+    'corr_coef_pearson.R'
+    'corr_coef_spearman.R'
+    'corr_scatterly.R'
+    'Cross_Correlation.R'
+    'grouping_function.R'
+    'I-Chart.R'
+    'matrixly.R'
+    'Partial_Autocorrelation.R'
+RoxygenNote: 6.1.1
