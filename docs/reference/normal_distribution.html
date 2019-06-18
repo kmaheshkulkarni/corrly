@@ -6,8 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>corr_coef_spearman
-correlation Coeficient using spearman Method — corr_coef_spearman • corrlY</title>
+<title>normal_distribution
+normal distribution Chart using R Plotly — normal_distribution • corrlY</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -33,11 +33,11 @@ correlation Coeficient using spearman Method — corr_coef_spearman • corrlY</
 
 
 
-<meta property="og:title" content="corr_coef_spearman
-correlation Coeficient using spearman Method — corr_coef_spearman" />
+<meta property="og:title" content="normal_distribution
+normal distribution Chart using R Plotly — normal_distribution" />
 
-<meta property="og:description" content="corr_coef_spearman
-correlation Coeficient using spearman Method" />
+<meta property="og:description" content="normal_distribution
+normal distribution Chart using R Plotly" />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -101,46 +101,45 @@ correlation Coeficient using spearman Method" />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>corr_coef_spearman
-correlation Coeficient using spearman Method</h1>
+    <h1>normal_distribution
+normal distribution Chart using R Plotly</h1>
     
-    <div class="hidden name"><code>corr_coef_spearman.Rd</code></div>
+    <div class="hidden name"><code>normal_distribution.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>corr_coef_spearman
-correlation Coeficient using spearman Method</p>
+    <p>normal_distribution
+normal distribution Chart using R Plotly</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>corr_coef_spearman</span>(<span class='kw'>variable1</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>variable2</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>decimal</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
+    <pre class="usage"><span class='fu'>normal_distribution</span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>parameter</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>xname</span> <span class='kw'>=</span> <span class='st'>""</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>variable1</th>
-      <td><p>is a column or Numeric vector</p></td>
+      <th>data</th>
+      <td><p>is a Data Frame</p></td>
     </tr>
     <tr>
-      <th>variable2</th>
-      <td><p>is a column or Numeric vector</p></td>
+      <th>parameter</th>
+      <td><p>is a column of data frame</p></td>
     </tr>
     <tr>
-      <th>decimal</th>
-      <td><p>is a Numeric Argument</p></td>
+      <th>xname</th>
+      <td><p>is title of xaxis</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>correlation coeficient</p>
+    <p>plot</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>corr_coef_spearman</span>(<span class='kw'>variable1</span><span class='kw'>=</span> <span class='no'>cars</span>$<span class='no'>speed</span>, <span class='kw'>variable2</span><span class='kw'>=</span><span class='no'>cars</span>$<span class='no'>dist</span>, <span class='kw'>decimal</span> <span class='kw'>=</span> <span class='fl'>2</span>)</div><div class='output co'>#&gt; [1] 0.83</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>normal_distribution</span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>mtcars</span>, <span class='kw'>parameter</span> <span class='kw'>=</span> <span class='no'>mtcars</span>$<span class='no'>mpg</span>, <span class='kw'>xname</span> <span class='kw'>=</span> <span class='st'>"mpg"</span>)</div><div class='img'><img src='normal_distribution-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

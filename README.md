@@ -1,5 +1,5 @@
 
-# <a href='https://maheshkulkarnix.github.io/corrlY/'><img src="docs/logo.png" align="right" alt="" width="250" /></a>
+# <a href='https://maheshkulkarnix.github.io/corrlY/'><img src="logo.png" align="right" alt="" width="250" /></a>
 
 ### Corrly is a Data Visualization Package For All Types of Correlation Charts using Plotly Package.
 
@@ -106,3 +106,13 @@ ichart_ly(cars, x = cars$speed, y = cars$dist, xname = "mpg", yname = "hp")
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+
+## Normal Distribution Chart
+
+<Example:->
+
+``` r
+normal_distribution(data = mtcars, parameter = mtcars$mpg, xname = "MPG")
+```
+
+![](README_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-11-2.png)<!-- -->
