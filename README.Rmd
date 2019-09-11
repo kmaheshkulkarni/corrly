@@ -2,11 +2,14 @@
 output: github_document
 ---
 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
  
-# <a href='https://maheshkulkarnix.github.io/corrlY/'><img src="logo.png" align="right" alt="" width="250" /></a>
+# <a href='https://maheshkulkarnix.github.io/corrlY/'><img src="man/figures/logo.png" align="right" alt="" width="250" /></a>
 
 ### Corrly is a Data Visualization Package For All Types of Correlation Charts using Plotly Package.
 
