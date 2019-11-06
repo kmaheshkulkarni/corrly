@@ -1,4 +1,4 @@
-Package: corrlY
+Package: corrly
 Type: Package
 Title: All Types of Correlation Charts using 'plotly'
 Version: 2.0
@@ -6,8 +6,8 @@ Author: Mahesh Kulkarni [aut, cre]
 Maintainer: Mahesh Kulkarni <corrly@outlook.com>
 Description: This is a Data Visualization Package For all types of Correlation.
 License: MIT + file LICENSE
-URL: https://kmaheshkulkarni.github.io/corrlY
-BugReports: https://github.com/kmaheshkulkarni/corrlY/issues
+URL: https://kmaheshkulkarni.github.io/corrly
+BugReports: https://github.com/kmaheshkulkarni/corrly/issues
 Imports: plotly (>= 4.5.6)
 Suggests:	knitr, rmarkdown
 Encoding: UTF-8
