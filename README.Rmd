@@ -9,7 +9,7 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
  
-# <a href='https://kmaheshkulkarni.github.io/corrlY/'><img src="man/figures/logo.png" align="right" alt="" width="250" /></a>
+# <a href='https://kmaheshkulkarni.github.io/corrly/'><img src="man/figures/logo.png" align="right" alt="" width="250" /></a>
 
 ### Corrly is a Data Visualization Package For All Types of Correlation Charts using Plotly Package.
 
