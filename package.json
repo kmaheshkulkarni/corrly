@@ -1,0 +1,34 @@
+{
+  "name": "corrly",
+  "version": "2.0.1",
+  "description": "This is a Data Visualization Package For all types of Correlation",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "man": "man"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmaheshkulkarni/corrlY.git"
+  },
+  "author": "Mahesh Kulkarni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kmaheshkulkarni/corrlY/issues"
+  },
+  "homepage": "https://github.com/kmaheshkulkarni/corrlY#readme",
+  "keywords": [
+    "corrly"
+  ],
+  "dependencies": {
+    "connect": "^3.7.0",
+    "edit-json-file": "^1.3.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {}
+}
