@@ -15,11 +15,10 @@ normal_distribution <- function(data = NULL, parameter = NULL, xname = ""){
   mean_overall <- mean(parameter)
   sigma_overall <- sd(parameter)
   # par(mar=c(1,1,1,1))
-  h <- hist(parameter, breaks = 10, density = 10,
-            col = "lightgray", xlab = "Accuracy", main = "Overall") 
+  histo <- hist(parameter, breaks = 10, plot = FALSE) 
   xfit <- seq(min(parameter), max(parameter)) 
   yfit <- dnorm(xfit, mean = mean(parameter), sd = sd(parameter)) 
-  yfit <- yfit * diff(h$mids[1:2]) * length(parameter) 
+  yfit <- yfit * diff(histo$mids[1:2]) * length(parameter) 
   limit_data <- data.frame(xvalues = c((mean_overall - (3*sigma_overall)),
                                        (mean_overall - (2*sigma_overall)),
                                        (mean_overall - sigma_overall),
