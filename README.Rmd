@@ -1,5 +1,6 @@
 ---
 output: github_document
+always_allow_html: true
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -20,7 +21,7 @@ library(plotly)
 library(htmltools)
 library(corrlY)
 # install.packages("devtools")
-#devtools::install_github("maheshKulkarniX/corrlY")
+# devtools::install_github("maheshKulkarniX/corrlY")
 ```
 
 ## correlation Coeficient using kendall Method
