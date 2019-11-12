@@ -18,9 +18,11 @@ devtools::install_github("maheshKulkarniX/corrlY")
 spearman<- corr_coef_spearman(variable1= cars$speed, variable2=cars$dist, decimal = 2)
 corr_scatterly(data=cars,x=cars$speed,y=cars$dist,corr_coef=spearman,xname="speed",yname="dist")
 ```
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ## Correlation Matrix Plot
 
 ``` r
 matrixly(data = mtcars)
 ```
+![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
