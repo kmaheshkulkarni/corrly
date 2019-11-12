@@ -11,3 +11,4 @@
 logo.png
 ^README_files$
 README.md
+^\.travis\.yml$

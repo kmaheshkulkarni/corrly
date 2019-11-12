@@ -9,7 +9,7 @@ License: MIT + file LICENSE
 URL: https://kmaheshkulkarni.github.io/corrly
 BugReports: https://github.com/kmaheshkulkarni/corrly/issues
 Imports: plotly (>= 4.5.6)
-Suggests:	knitr, rmarkdown
+Suggests: knitr, rmarkdown
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.6)
@@ -26,3 +26,4 @@ Collate:
     'Partial_Autocorrelation.R'
     'Normal_Distribution.R'
 RoxygenNote: 6.1.1
+VignetteBuilder: knitr
