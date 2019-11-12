@@ -3,23 +3,20 @@ output: github_document
 always_allow_html: true
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
  
-# <a href='https://kmaheshkulkarni.github.io/corrly/'><img src="man/figures/logo.png" align="right" alt="" width="250" /></a>
+# <a href='https://maheshkulkarnix.github.io/corrlY/'><img src="logo.png" align="right" alt="" width="250" /></a>
 
-### Corrly is a Data Visualization Package For All Types of Quality Cntrol Charts for Manufacturing Process.
+### Corrly is a Data Visualization Package For Manufacturing Process.
 
 ## Install Corrly
 
 ```{r, message=FALSE, warning=FALSE}
 library(plotly)
 library(htmltools)
-library(corrlY)
+library(corrly)
 # install.packages("devtools")
 # devtools::install_github("maheshKulkarniX/corrlY")
 ```
@@ -27,32 +24,24 @@ library(corrlY)
 ## correlation Coeficient using kendall Method
 
 ```{r, warning=FALSE}
-# source("R/corr_coef_kendall.R")
-# Example: 
 corr_coef_kendall(variable1= mtcars$cyl, variable2=mtcars$carb, decimal = 2) 
 ```
 
 ## correlation Coeficient using pearson Method
 
 ```{r, warning=FALSE}
-# Example: 
-# source("R/corr_coef_pearson.R")
 corr_coef_pearson(variable1= mtcars$disp, variable2=mtcars$hp, decimal = 2)
 ```
 
 ## correlation Coeficient using spearman Method
 
 ```{r, warning=FALSE}
-# Example:
-# source("R/corr_coef_spearman.R")
 corr_coef_spearman(variable1= cars$speed, variable2=cars$dist, decimal = 2)
 ```
 
 ## Correlation Scatter Plot
 
 ```{r, message=FALSE, warning=FALSE}
-# Example: 
-# source("R/corr_scatterly.R")
 spearman<- corr_coef_spearman(variable1= cars$speed, variable2=cars$dist, decimal = 2)
 corr_scatterly(data=cars,x=cars$speed,y=cars$dist,corr_coef=spearman,xname="speed",yname="dist")
 ```
@@ -60,15 +49,12 @@ corr_scatterly(data=cars,x=cars$speed,y=cars$dist,corr_coef=spearman,xname="spee
 ## Correlation Matrix Plot
 
 ```{r, message=FALSE, warning=FALSE}
-# Example: 
-# source("R/matrixly.R")
 matrixly(data = mtcars)
 ```
 
 ## Autocorrelation
 
 ```{r, message=FALSE, warning=FALSE}
-#Example:- 
 series<- c(mtcars$gear, mtcars$carb)
 acf_ly(series)
 ```
@@ -83,8 +69,6 @@ pacf_ly(series)
 
 ## Cross Correlation
 
-Method:- ccf_ly(series1, series2)
-
 ```{r, message=FALSE, warning=FALSE}
 ccfq<- c(mtcars$mpg, mtcars$disp)
 ccfa<- c(mtcars$gear, mtcars$carb)
@@ -93,16 +77,12 @@ ccf_ly(series1=ccfq, series2=ccfa)
 
 ## I Chart
 
-Example:-
 ```{r, message=FALSE}
-# source("R/I-Chart.R")
 cars<- cars
 ichart_ly(cars, x = cars$speed, y = cars$dist, xname = "mpg", yname = "hp")
 ```
 
 ## Normal Distribution Chart
-
-Example:-
 
 ```{r, message=FALSE}
 normal_distribution(data = mtcars, parameter = mtcars$mpg, xname = "MPG")
