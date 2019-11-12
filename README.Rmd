@@ -1,13 +1,12 @@
 ---
 output: github_document
-always_allow_html: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
  
-# <a href='https://maheshkulkarnix.github.io/corrlY/'><img src="logo.png" align="right" alt="" width="250" /></a>
+# <a href='https://kmaheshkulkarni.github.io/corrly/'><img src="logo.png" align="right" alt="" width="250" /></a>
 
 ### Corrly is a Data Visualization Package For Manufacturing Process.
 
