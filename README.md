@@ -21,7 +21,7 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 
 The package tests the use of htmlwidgets in pkgdown:
 
-  - [Home page](https://jayhesselberth.github.io/widgetdown/index.html)
+  - [Home page](https://github.com/kmaheshkulkarni/corrly/index.html)
     (i.e., `README.Rmd` or `index.Rmd`)
   - [Reference
     topics](https://jayhesselberth.github.io/widgetdown/reference/test-widgets.html)
