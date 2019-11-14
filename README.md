@@ -2,7 +2,7 @@
  
 [![](/man/figures/logo.png)](https://kmaheshkulkarni.github.io/corrly/)
 
-# Corrly is a Data Visualization Package For Manufacturing Process.
+## Corrly is a Data Visualization Package For Manufacturing Process.
 
 <!-- badges: start -->
 [![Project Status: WIP – Initial development is in progress, but there
@@ -12,8 +12,6 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 <!-- badges: end -->
 
 [Home page](https://github.com/kmaheshkulkarni/corrly/index.html)
-
-</div>
 
 ## Install Corrly
 
@@ -42,3 +40,5 @@ matrixly(data = mtcars)
 ```
 
 <img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+
+</div>
