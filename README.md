@@ -23,9 +23,6 @@ The package tests the use of htmlwidgets in pkgdown:
 
   - [Home page](https://github.com/kmaheshkulkarni/corrly/index.html)
     (i.e., `README.Rmd` or `index.Rmd`)
-  - [Reference
-    topics](https://jayhesselberth.github.io/widgetdown/reference/test-widgets.html)
-    using Rd `@examples`.
 
 
 ## Correlation Scatter Plot
