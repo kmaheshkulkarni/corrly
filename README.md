@@ -13,6 +13,8 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 
 [Home page](https://github.com/kmaheshkulkarni/corrly/index.html)
 
+</div>
+
 ## Install Corrly
 
 ``` r
@@ -40,5 +42,3 @@ matrixly(data = mtcars)
 ```
 
 <img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
-
-</div>
