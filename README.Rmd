@@ -33,8 +33,7 @@ if (requireNamespace("htmltools", quietly = TRUE)) {
 
 The package tests the use of htmlwidgets in pkgdown:
 
-* [Home page](https://jayhesselberth.github.io/widgetdown/index.html) (i.e., `README.Rmd` or `index.Rmd`)
-* [Reference topics](https://jayhesselberth.github.io/widgetdown/reference/test-widgets.html) using Rd `@examples`.
+* [Home page](https://github.com/kmaheshkulkarni/corrly/index.html)
 
 ## correlation Coeficient using kendall Method
 
