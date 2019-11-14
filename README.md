@@ -22,7 +22,6 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 The package tests the use of htmlwidgets in pkgdown:
 
   - [Home page](https://github.com/kmaheshkulkarni/corrly/index.html)
-    (i.e., `README.Rmd` or `index.Rmd`)
 
 
 ## Correlation Scatter Plot
