@@ -9,6 +9,7 @@
 has not yet been a stable, usable release suitable for the
 public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://graph.network)
+[![CRAN status](https://www.r-pkg.org/badges/version/corrly)](https://CRAN.R-project.org/package=corrly)
 <!-- badges: end -->
 
 [Home page](https://github.com/kmaheshkulkarni/corrly/index.html)
