@@ -12,7 +12,7 @@ Imports: plotly (>= 4.5.6)
 Suggests: knitr, rmarkdown
 Encoding: UTF-8
 LazyData: true
-Depends: R (>= 3.6)
+Depends: R (>= 3.5)
 Collate:
     'Autocorrelation.R'
     'corr_coef_kendall.R'
