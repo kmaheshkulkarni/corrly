@@ -1,16 +1,20 @@
+<div align="center">
+ 
+[![](/man/figures/logo.png)](https://kmaheshkulkarni.github.io/corrly/)
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-# corrly <a href='https://kmaheshkulkarni.github.io/corrly/'><img src="logo.png" align="right" alt="" width="250" /></a>
+## Corrly is a Data Visualization Package For Manufacturing Process.
 
 <!-- badges: start -->
-
 [![Project Status: WIP – Initial development is in progress, but there
 has not yet been a stable, usable release suitable for the
 public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://graph.network)
+[![CRAN status](https://www.r-pkg.org/badges/version/corrly)](https://CRAN.R-project.org/package=corrly)
 <!-- badges: end -->
 
-### Corrly is a Data Visualization Package For Manufacturing Process.
+[Home page](https://github.com/kmaheshkulkarni/corrly/index.html)
+
+</div>
 
 ## Install Corrly
 
@@ -18,11 +22,6 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 # install.packages("devtools")
 # devtools::install_github("kmaheshKulkarni/corrly")
 ```
-
-The package tests the use of htmlwidgets in pkgdown:
-
-  - [Home page](https://github.com/kmaheshkulkarni/corrly/index.html)
-
 
 ## Correlation Scatter Plot
 
