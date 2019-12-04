@@ -5,8 +5,14 @@
 \title{corr_scatterly
 Correlation Scatter Plot using R Plotly}
 \usage{
-corr_scatterly(data = NULL, x = NULL, y = NULL, corr_coef = NULL,
-  xname = "", yname = "")
+corr_scatterly(
+  data = NULL,
+  x = NULL,
+  y = NULL,
+  corr_coef = NULL,
+  xname = "",
+  yname = ""
+)
 }
 \arguments{
 \item{data}{is a Data Frame}

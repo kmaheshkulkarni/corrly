@@ -2,13 +2,15 @@
 ^\.Rproj\.user$
 ^docs$
 ^_pkgdown\.yml$
-^README\.Rmd$
+^corrly\.Rmd$
 ^README-.*\.png$
 ^pkgdown$
-^README.Rmd
+^corrly.Rmd
+^qpdf
 ^cran-comments\.md$
 ^CRAN-RELEASE$
 logo.png
 ^README_files$
 README.md
 ^\.travis\.yml$
+^corrly\.Rproj$

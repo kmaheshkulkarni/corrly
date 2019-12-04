@@ -5,8 +5,7 @@
 \title{corr_coef_spearman
 correlation Coeficient using spearman Method}
 \usage{
-corr_coef_spearman(variable1 = NULL, variable2 = NULL,
-  decimal = NULL)
+corr_coef_spearman(variable1 = NULL, variable2 = NULL, decimal = NULL)
 }
 \arguments{
 \item{variable1}{is a column or Numeric vector}
