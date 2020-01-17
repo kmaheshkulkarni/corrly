@@ -41,9 +41,13 @@ ichart_ly <- function(data, x = NULL, y = NULL, xname = NULL, yname = NULL, text
   return(plotly::plot_ly(data, x = x, y = y) %>%
            plotly::add_markers(name = paste0('Pararameter value'), marker = list(color = ~I(as.character(colors)), symbol = ~I(as.character(symbols)), size = data$sizes), showlegend = FALSE) %>%
            plotly::add_trace(type = 'scatter', mode = 'lines', color = I('#01579b'), showlegend = FALSE, 
+<<<<<<< HEAD
                              hovertemplate = paste('<i>yname</i>: $%{y:.2f}',
                                                    '<br><b>xname</b>: %{x}<br>',
                                                    '<b>%{text}</b>'),opacity=1) %>%
+=======
+                             hovertinfo = FALSE, opacity=1) %>%
+>>>>>>> 841a556d0b2dc384c463fdb40c6af89eb9089351
            plotly::add_trace(y=ucl_i_chart,name = "UCL",type = 'scatter', mode ='lines', line = list(dash = "dot"), color = I('#e53935'), showlegend = FALSE) %>%
            plotly::add_trace(y=(Mean_ichart + (2*sigma_i_mr_chart)),name = "+ 2 Sigma",type = 'scatter', mode = 'lines', line = list(dash = "dash"), color = I('#ffb74d'), showlegend = FALSE) %>%
            plotly::add_trace(y=(Mean_ichart + sigma_i_mr_chart),name = "+ 1 Sigma",type = 'scatter', mode = 'lines', line = list(dash = "dash"), color = I('#ffcc80'), showlegend = FALSE) %>%
