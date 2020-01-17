@@ -8,13 +8,12 @@
 #' @param y is a column of data frame on y-axis
 #' @param xname is a string and Name of x-axis
 #' @param yname is a string and Name of y-axis
-#' @param text is a string
 #' @import plotly
 #' @return plot
 #' @export
 #' @examples
-#' ichart_ly(mtcars, x = mtcars$mpg, y = mtcars$hp, xname = "mpg", yname = "hp", text= "text")
-ichart_ly <- function(data, x = NULL, y = NULL, xname = NULL, yname = NULL, text= NULL){
+#' ichart_ly(mtcars, x = mtcars$mpg, y = mtcars$hp, xname = "mpg", yname = "hp")
+ichart_ly <- function(data, x = NULL, y = NULL, xname = NULL, yname = NULL){
   f1 <- list(family = "Arial, sans-serif", size = 18, color = "darkgrey")
   f2 <- list(family = "Old Standard TT, serif", size = 14, color = "black")
   a <- list(title = paste0(xname), titlefont = f1, showticklabels = TRUE, tickangle = 45, tickfont = f2, exponentformat = "E")
@@ -41,9 +40,7 @@ ichart_ly <- function(data, x = NULL, y = NULL, xname = NULL, yname = NULL, text
   return(plotly::plot_ly(data, x = x, y = y) %>%
            plotly::add_markers(name = paste0('Pararameter value'), marker = list(color = ~I(as.character(colors)), symbol = ~I(as.character(symbols)), size = data$sizes), showlegend = FALSE) %>%
            plotly::add_trace(type = 'scatter', mode = 'lines', color = I('#01579b'), showlegend = FALSE, 
-                             hovertemplate = paste('<i>yname</i>: $%{y:.2f}',
-                                                   '<br><b>xname</b>: %{x}<br>',
-                                                   '<b>%{text}</b>'),opacity=1) %>%
+                             hovertinfo = FALSE, opacity=1) %>%
            plotly::add_trace(y=ucl_i_chart,name = "UCL",type = 'scatter', mode ='lines', line = list(dash = "dot"), color = I('#e53935'), showlegend = FALSE) %>%
            plotly::add_trace(y=(Mean_ichart + (2*sigma_i_mr_chart)),name = "+ 2 Sigma",type = 'scatter', mode = 'lines', line = list(dash = "dash"), color = I('#ffb74d'), showlegend = FALSE) %>%
            plotly::add_trace(y=(Mean_ichart + sigma_i_mr_chart),name = "+ 1 Sigma",type = 'scatter', mode = 'lines', line = list(dash = "dash"), color = I('#ffcc80'), showlegend = FALSE) %>%
