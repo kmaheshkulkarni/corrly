@@ -8,11 +8,12 @@
 #' @param y is a column of data frame on y-axis
 #' @param xname is a string and Name of x-axis
 #' @param yname is a string and Name of y-axis
+#' @param text is a string
 #' @import plotly
 #' @return plot
 #' @export
 #' @examples
-#' ichart_ly(mtcars, x = mtcars$mpg, y = mtcars$hp, xname = "mpg", yname = "hp")
+#' ichart_ly(mtcars, x = mtcars$mpg, y = mtcars$hp, xname = "mpg", yname = "hp", text= "text")
 ichart_ly <- function(data, x = NULL, y = NULL, xname = NULL, yname = NULL, text= NULL){
   f1 <- list(family = "Arial, sans-serif", size = 18, color = "darkgrey")
   f2 <- list(family = "Old Standard TT, serif", size = 14, color = "black")
