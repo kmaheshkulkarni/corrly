@@ -3,7 +3,7 @@
 #' @param data is a Data Frame
 #' @param parameter is a column of data frame 
 #' @param xname is title of xaxis
-#' @title title is plot name
+#' @param title is plot name
 #' @import plotly
 #' @importFrom stats sd dnorm
 #' @importFrom graphics hist
@@ -15,6 +15,7 @@ normal_distribution <- function(data = NULL, parameter = NULL, xname = "", title
   parameter <- as.numeric(parameter)
   mean_overall <- mean(parameter)
   sigma_overall <- sd(parameter)
+  t <- list(family = "sans serif", size = 20, color = '#feda15')
   # par(mar=c(1,1,1,1))
   histo <- hist(parameter, breaks = 10, plot = FALSE) 
   xfit <- seq(min(parameter), max(parameter)) 
@@ -39,7 +40,7 @@ normal_distribution <- function(data = NULL, parameter = NULL, xname = "", title
       add_trace(x=(mean_overall + sigma_overall),type = 'scatter', mode = 'lines', line = list(dash = "dash"), color = I('#ffcc80'), name='+1 sigma', showlegend = FALSE)%>%
       add_trace(x=(mean_overall + (2*sigma_overall)),type = 'scatter', mode = 'lines', line = list(dash = "dash"), color = I('#ffb74d'), name='+2 sigma', showlegend = FALSE)%>%
       add_trace(x=(mean_overall + (3*sigma_overall)),type = 'scatter', mode = 'lines', line = list(dash = "dash"), color = I('#ffb74d'), name='+2 sigma', showlegend = FALSE)%>%
-      layout(title= title , xaxis = list(title = paste0(xname)),yaxis = list (title = "Frequency"))%>%
+      layout(title= paste0(title), font=t, xaxis = list(title = paste0(xname)),yaxis = list (title = "Frequency"))%>%
       add_annotations(x = limit_data$xvalues, y = limit_data$yvalues, text = limit_data$textvalues, xref = "x", yref = "y", showarrow = TRUE, arrowhead = 4, arrowsize = 0.5, ax = 10, ay = -25, opacity = 0.7)%>%
       plotly::config(displaylogo = FALSE)
   )
