@@ -15,7 +15,7 @@ normal_distribution <- function(data = NULL, parameter = NULL, xname = "", title
   parameter <- as.numeric(parameter)
   mean_overall <- mean(parameter)
   sigma_overall <- sd(parameter)
-  t <- list(family = "arial", size = 15, color = '#333')
+  t <- list(family = "arial", size = 14, color = '#333')
   # par(mar=c(1,1,1,1))
   histo <- hist(parameter, breaks = 10, plot = FALSE) 
   xfit <- seq(min(parameter), max(parameter)) 
