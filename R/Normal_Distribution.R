@@ -3,14 +3,15 @@
 #' @param data is a Data Frame
 #' @param parameter is a column of data frame 
 #' @param xname is title of xaxis
+#' @title title is plot name
 #' @import plotly
 #' @importFrom stats sd dnorm
 #' @importFrom graphics hist
 #' @return plot
 #' @export
 #' @examples
-#' normal_distribution(data = mtcars, parameter = mtcars$mpg, xname = "mpg")
-normal_distribution <- function(data = NULL, parameter = NULL, xname = ""){
+#' normal_distribution(data = mtcars, parameter = mtcars$mpg, xname = "mpg", title = "Plot Name")
+normal_distribution <- function(data = NULL, parameter = NULL, xname = "", title = NULL){
   parameter <- as.numeric(parameter)
   mean_overall <- mean(parameter)
   sigma_overall <- sd(parameter)
@@ -29,7 +30,7 @@ normal_distribution <- function(data = NULL, parameter = NULL, xname = ""){
                            yvalues = c(max(yfit), max(yfit), max(yfit), max(yfit), max(yfit), max(yfit), max(yfit)),
                            textvalues = c('-3 Sigma', '-2 Sigma', '-1 Sigma', 'Mean', '+1 Sigma', '+2 Sigma', '+3 Sigma'))
   return(
-    plot_ly(x = xfit, y = yfit)%>%
+    plot_ly(x = xfit, y = yfit, title= title)%>%
       add_trace(name = 'Distribution',type = 'scatter', mode='lines', color = I('#01579b'), showlegend = FALSE)%>%
       add_trace(x=(mean_overall - (3*sigma_overall)),type = 'scatter', mode = 'lines', line = list(dash = "dash"), color = I('#ffb74d'), name='-2 sigma', showlegend = FALSE)%>%
       add_trace(x=(mean_overall - (2*sigma_overall)),type = 'scatter', mode = 'lines', line = list(dash = "dash"), color = I('#ffb74d'), name='-2 sigma', showlegend = FALSE)%>%
