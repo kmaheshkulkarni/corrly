@@ -30,7 +30,7 @@ normal_distribution <- function(data = NULL, parameter = NULL, xname = "", title
                            yvalues = c(max(yfit), max(yfit), max(yfit), max(yfit), max(yfit), max(yfit), max(yfit)),
                            textvalues = c('-3 Sigma', '-2 Sigma', '-1 Sigma', 'Mean', '+1 Sigma', '+2 Sigma', '+3 Sigma'))
   return(
-    plot_ly(x = xfit, y = yfit, title= title)%>%
+    plot_ly(x = xfit, y = yfit)%>%
       add_trace(name = 'Distribution',type = 'scatter', mode='lines', color = I('#01579b'), showlegend = FALSE)%>%
       add_trace(x=(mean_overall - (3*sigma_overall)),type = 'scatter', mode = 'lines', line = list(dash = "dash"), color = I('#ffb74d'), name='-2 sigma', showlegend = FALSE)%>%
       add_trace(x=(mean_overall - (2*sigma_overall)),type = 'scatter', mode = 'lines', line = list(dash = "dash"), color = I('#ffb74d'), name='-2 sigma', showlegend = FALSE)%>%
@@ -39,7 +39,7 @@ normal_distribution <- function(data = NULL, parameter = NULL, xname = "", title
       add_trace(x=(mean_overall + sigma_overall),type = 'scatter', mode = 'lines', line = list(dash = "dash"), color = I('#ffcc80'), name='+1 sigma', showlegend = FALSE)%>%
       add_trace(x=(mean_overall + (2*sigma_overall)),type = 'scatter', mode = 'lines', line = list(dash = "dash"), color = I('#ffb74d'), name='+2 sigma', showlegend = FALSE)%>%
       add_trace(x=(mean_overall + (3*sigma_overall)),type = 'scatter', mode = 'lines', line = list(dash = "dash"), color = I('#ffb74d'), name='+2 sigma', showlegend = FALSE)%>%
-      layout(xaxis = list(title = paste0(xname)),yaxis = list (title = "Frequency"))%>%
+      layout(title= title , xaxis = list(title = paste0(xname)),yaxis = list (title = "Frequency"))%>%
       add_annotations(x = limit_data$xvalues, y = limit_data$yvalues, text = limit_data$textvalues, xref = "x", yref = "y", showarrow = TRUE, arrowhead = 4, arrowsize = 0.5, ax = 10, ay = -25, opacity = 0.7)%>%
       plotly::config(displaylogo = FALSE)
   )
